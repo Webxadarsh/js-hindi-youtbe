@@ -1,0 +1,51 @@
+javascript execution comtect
+
+yaad rrqkhna window hota hai broeser main in javascript in global 
+types:- global execution context, function execution contet   
+eval execution context  bhi hota hai
+
+let val1 =10
+let val2 =5
+function addnum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+let result = addnum(val1, val2)
+let result2 = addnum(10,2)
+
+chize executr kaise hoti hai 2 phases main run hota hai
+1.memory creation phases
+2.execution phases
+
+1st vale ke liye sirf jagah allocate hotu hai but execute nahi hoti hai
+
+step 1:
+global excetion aloocate kiya jata hai this ke andar
+step 2:
+memory phase:sare variables ko ikhatta ha kiya jta hai aur rakha jata hai apne apass 
+val1-> undefined
+val2->undefined
+addnum-> definition 
+result-> undefined
+result2-> undefined
+
+//global execution m kaam honey ke baad delete bhi hota hai
+step3; excetion phase
+val1 = 10
+val2 = 5    
+result =. new variable environment +execution thread.   new sandbox  execution context  create hota hai agar new functrion call hoat hai total
+        Memory phase val1 -> undefined
+        val2 -> undefined
+        total-> undefined
+
+        execution context 
+        num1 -> 10
+        num2 -> 5
+        total = 15
+
+
+
+        call stack main lifo use hoga last aayega aur uaopr se hi niklega
+
+               
+
